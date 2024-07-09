@@ -35,8 +35,7 @@ public class Remove_Value {
             int[] arrayNew = new int[array.length - count];
             for (int i = 0, k = 0; i < array.length; i++) {
                 if (array[i] != removeValue){
-                    arrayNew[k] = array[i];
-                    k++;
+                    arrayNew[k++] = array[i];
                 }
             }
             System.out.println("Mảng sau khi xóa phần tử: " + Arrays.toString(arrayNew));
